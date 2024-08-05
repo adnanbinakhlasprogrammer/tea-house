@@ -1,0 +1,72 @@
+/* Google Font Manrope */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* Universal CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+:root {
+    --primary: #FF0000;
+    --secondary: #FF8938;
+    --gray-1: #1C1C1C;
+    --gray-2: #777777;
+    --gray-3: #494949;
+    --white: #FFFFFF;
+    --white-light: #F4F4F4;
+}
+
+.container {
+    max-width: 1600px;
+    width: 80%;
+    margin-inline: auto;
+}
+
+
+.btn-primary {
+    background: linear-gradient(270deg, var(--primary) 10%, var(--secondary) 90%);
+    color: var(--white);
+    outline: none;
+    border: none;
+    text-decoration: none;
+    padding: 1.125rem 1.25rem;
+    border-radius: 0.625rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.btn-secondary {
+    background: linear-gradient(270deg, var(--primary) 10%, var(--secondary) 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    padding: 0.85rem 1.75rem;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.heading {
+    color: var(--gray-1);
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 6.25rem;
+}
+
+.title {
+    color: var(--gray-1);
+    font-size: 2.825rem;
+    font-weight: 800;
+}
+
+.description {
+    color: var(--gray-2);
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+}
