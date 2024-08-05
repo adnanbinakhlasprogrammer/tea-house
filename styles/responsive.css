@@ -12,9 +12,13 @@
         transform: scale(0.7);
     }
 
-    #banner {
-        flex-direction: column;
+    section {
         margin-block: 2.135rem;
+    }
+
+    #banner,
+    #present {
+        flex-direction: column;
     }
 
     #banner .banner-content p {
@@ -34,4 +38,14 @@
     #featured .cards-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    #present .present-content {
+        order: 1;
+    }
+
+    #present .present-image {
+        order: 2;
+        gap: 0.88rem;
+    }
+    
 }
