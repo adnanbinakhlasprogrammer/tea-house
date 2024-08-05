@@ -17,7 +17,8 @@
     }
 
     #banner,
-    #present {
+    #present,
+    #client {
         flex-direction: column;
     }
 
@@ -48,4 +49,35 @@
         gap: 0.88rem;
     }
     
+    #client {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    #client .client-content::after {
+        display: none;
+    }
+
+    #client .client-content {
+        transform: scale(0.9);
+    }
+
+    #client .client-cards .card {
+        transform: scale(0.9);
+        padding: 1.625rem;
+    }
+
+    #client .client-cards .card .image-wrapper:nth-child(1) {
+        left: auto;
+        top: -10%;
+        right: -5%;
+    }
+
+    #client .client-cards .card:nth-child(1) {
+        display: none;
+    }
+
+    #client .client-cards .card:nth-child(3) {
+        display: none;
+    }
 }

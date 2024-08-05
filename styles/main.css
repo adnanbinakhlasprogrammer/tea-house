@@ -39,6 +39,11 @@ section {
     border-radius: 0.625rem;
     font-size: 1.25rem;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, var(--primary) 10%, var(--secondary) 90%);
 }
 
 .btn-secondary {
@@ -52,6 +57,18 @@ section {
     outline: none;
     border: none;
     text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 2px solid transparent;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(90deg, var(--primary) 10%, var(--secondary) 90%);
+    background-clip: inherit;
+    -webkit-text-fill-color: var(--white);
+    border-color: var(--white);
 }
 
 .heading {
@@ -257,4 +274,108 @@ section {
     grid-row: 2 / -1;
     grid-column: 1 / 2;
     background: rgba(87, 118, 57, 0.10);
+}
+
+/* Client Styles */
+#client {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(270deg, var(--primary) 0%, var(--secondary) 100%);
+    padding: 4.38rem;
+    border-radius: 0.625rem;
+    position: relative;
+    min-height: 50rem;
+}
+
+#client .client-content::after {
+    content: "";
+    width: 325px;
+    height: 337px;
+    background-image: url("../images/bg_cup.png");
+    background-size: cover;
+    position: absolute;
+    bottom: 5%;
+    left: 16%;
+}
+
+#client .client-content h2 {
+    color: var(--white-light);
+    max-width: 24rem;
+}
+
+#client .client-content p {
+    color: var(--white-light);
+    max-width: 27.5rem;
+    margin: 1.25rem 0 1.88rem 0;
+}
+
+#client .client-content div {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+#client .client-cards {
+    position: relative;
+}
+
+#client .client-cards .card:nth-child(1) {
+    position: absolute;
+    top: -58%;
+    right: -28%;
+    z-index: 1;
+    opacity: 0.4;
+}
+
+#client .client-cards .card:nth-child(2) {
+    position: relative;
+    z-index: 3;
+}
+
+#client .client-cards .card:nth-child(3) {
+    position: absolute;
+    bottom: -58%;
+    right: -28%;
+    z-index: 2;
+    opacity: 0.4;
+}
+
+#client .client-cards .card {
+    position: relative;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 3.25rem;
+}
+
+#client .client-cards .card .image-wrapper:nth-child(1) {
+    position: absolute;
+    top: -10%;
+    left: -5%;
+    padding: 0.25rem;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+#client .client-cards .card .image-wrapper:nth-child(1) img{
+    vertical-align: middle;
+    width: 100%;
+}
+
+#client .client-cards .card .image-wrapper:nth-child(5) {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+#client .client-cards p {
+    max-width: 22rem;
+}
+
+#client .client-cards h3 {
+    font-size: 1rem;
+    color: var(--gray-1);
+    margin: 1.25rem 0 0 0;
 }
