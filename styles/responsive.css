@@ -1,0 +1,33 @@
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+        line-height: 3.125rem;
+    }
+
+    .btn-primary {
+        transform: scale(0.7);
+    }
+
+    #banner {
+        flex-direction: column;
+        padding-block: 2.135rem;
+    }
+
+    #banner .banner-content p {
+        margin-block: 0.94rem;
+    }
+
+    #banner .banner-content button {
+        margin-left: -8%;
+    }
+
+    #banner .banner-image .image-wrapper .badge {
+        transform: scale(0.5);
+        bottom: -16%;
+        left: -13%;
+    }
+}
