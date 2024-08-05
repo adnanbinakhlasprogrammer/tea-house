@@ -14,7 +14,7 @@
 
     #banner {
         flex-direction: column;
-        padding-block: 2.135rem;
+        margin-block: 2.135rem;
     }
 
     #banner .banner-content p {
@@ -29,5 +29,9 @@
         transform: scale(0.5);
         bottom: -16%;
         left: -13%;
+    }
+
+    #featured .cards-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
