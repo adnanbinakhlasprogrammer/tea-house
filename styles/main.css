@@ -329,6 +329,14 @@ section {
     right: -28%;
     z-index: 1;
     opacity: 0.4;
+    cursor: default;
+}
+
+#client .client-cards .card:nth-child(1) p::selection,
+#client .client-cards .card:nth-child(1) h3::selection {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #client .client-cards .card:nth-child(2) {
@@ -342,6 +350,14 @@ section {
     right: -28%;
     z-index: 2;
     opacity: 0.4;
+    cursor: default;
+}
+
+#client .client-cards .card:nth-child(3) p::selection,
+#client .client-cards .card:nth-child(3) h3::selection {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #client .client-cards .card {
@@ -360,7 +376,7 @@ section {
     border-radius: 50%;
 }
 
-#client .client-cards .card .image-wrapper:nth-child(1) img{
+#client .client-cards .card .image-wrapper:nth-child(1) img {
     vertical-align: middle;
     width: 100%;
 }
@@ -387,7 +403,7 @@ section {
     margin-bottom: 1.25rem;
 }
 
-#events > p {
+#events>p {
     max-width: 56rem;
     text-align: center;
     margin-inline: auto;
@@ -424,4 +440,108 @@ section {
     font-weight: 700;
     line-height: 1.75rem;
     text-decoration: none;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(270deg, #ff00001a 0%, #ff89381a 100%);
+    padding-block: 5rem;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+#footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer .footer-content div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+#footer .links-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#footer .links-container ul h3 {
+    color: var(--gray-1);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.875rem;
+}
+
+#footer .links-container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.12rem;
+}
+
+#footer .links-container ul a {
+    color: var(--gray-3);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#footer .links-container ul a:hover {
+    background: linear-gradient(270deg, var(--primary) 10%, var(--secondary) 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#footer .links-container form h3 {
+    color: var(--gray-1);
+    font-size: 1.5rem;
+    font-weight: 600;
+    max-width: 13rem;
+    line-height: 2.5rem;
+}
+
+#footer .links-container form>div {
+    display: flex;
+    align-items: center;
+}
+
+#footer .links-container form input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--gray-2);
+    font-size: 0.875rem;
+    padding: 1.44rem;
+    padding-left: 0;
+    border-bottom: 1px solid var(--gray-3);
+}
+
+#footer .links-container form button {
+    background: linear-gradient(270deg, var(--primary) 10%, var(--secondary) 90%);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+}
+
+#footer div:nth-child(3) p {
+    color: var(--gray-3);
+    text-align: center;
+    font-weight: 500;
+}
+
+#footer div:nth-child(3) p span {
+    background: linear-gradient(270deg, var(--primary) 10%, var(--secondary) 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
 }

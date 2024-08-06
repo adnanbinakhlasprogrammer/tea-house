@@ -18,7 +18,8 @@
 
     #banner,
     #present,
-    #client {
+    #client,
+    #footer .footer-content  {
         flex-direction: column;
     }
 
@@ -32,11 +33,13 @@
 
     #banner .banner-image .image-wrapper .badge {
         transform: scale(0.5);
-        bottom: -16%;
-        left: -13%;
+        bottom: -27px;
+        left: 4%;
     }
 
-    #featured .cards-container {
+    #featured .cards-container,
+    #events .cards-container,
+    #footer .links-container {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -79,5 +82,40 @@
 
     #client .client-cards .card:nth-child(3) {
         display: none;
+    }
+
+    #footer {
+        gap: 2rem;
+        
+    }
+
+    footer {
+        padding-block: 1.5rem;
+    }
+
+    footer .links-container ul {
+        gap: 0.875rem !important;
+    }
+
+    #footer .links-container ul h3 {
+        margin-bottom: 0.2rem;
+    }
+
+    #footer .links-container {
+        gap: 1rem
+    }
+
+    #footer .footer-content div:nth-child(2) {
+        flex-direction: column;
+        align-items: start;
+        gap: 0;
+    }
+
+    #footer .footer-content {
+        align-items: start;
+    }
+
+    #footer .footer-content button {
+        margin-left: -12%;
     }
 }
